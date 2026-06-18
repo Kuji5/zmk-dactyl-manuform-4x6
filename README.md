@@ -1,29 +1,15 @@
-# Dactyl Manuform 4x5 — LOTR Themed ZMK Keyboard
+# Dactyl Manuform 4x6
 
-A hand-wired, split ergonomic keyboard built on the Dactyl Manuform 4x5 layout, running [ZMK firmware](https://zmk.dev/) on nice!nano controllers. The case is 3D-printed and painted with a Lord of the Rings theme, featuring Elvish script, the White Tree of Gondor, and LOTR keycaps from Drop. The firmware uses **[home row mods](https://zmk.dev/docs/behaviors/mod-tap)** (mod-tap): Shift, Ctrl, Alt, and Gui live on the home row so you hold for the modifier and tap for the letter.
-
-![Keyboard top view](images/keyboard-top-view.png)
-
-## The Build
-
-![Keyboard close-up](images/keyboard-closeup.png)
-
-![Keyboard side view](images/keyboard-side-view.png)
-
-### Internal Wiring
-
-Hand-wired matrix with diodes (col2row), connected to nice!nano controllers via a Pro Micro-compatible pinout.
-
-![Internal wiring](images/internal-wiring.png)
+A hand-wired, split ergonomic keyboard built on the Dactyl Manuform 4x6 layout, running [ZMK firmware](https://zmk.dev/) on nice!nano controllers. The firmware uses **[home row mods](https://zmk.dev/docs/behaviors/mod-tap)** (mod-tap): Shift, Ctrl, Alt, and Gui live on the home row so you hold for the modifier and tap for the letter.
 
 ## Specs
 
 |                     |                                                     |
 | ------------------- | --------------------------------------------------- |
-| **Layout**          | Dactyl Manuform 4x5, split                          |
-| **Keys**            | 46                                                  |
+| **Layout**          | Dactyl Manuform 4x6, split                          |
+| **Keys**            | 50                                                  |
 | **Home row mods**   | Mod-tap: Shift/Ctrl/Alt/Gui on `A`–`F` and `J`–`;`  |
-| **Matrix**          | 10 columns x 5 rows                                 |
+| **Matrix**          | 12 columns x 5 rows                                 |
 | **Controller**      | nice!nano v2 (nRF52840)                             |
 | **Firmware**        | ZMK                                                 |
 | **Connectivity**    | Bluetooth (split halves communicate over BLE) + USB |
@@ -35,25 +21,6 @@ Hand-wired matrix with diodes (col2row), connected to nice!nano controllers via 
 Four layers. The default layer uses **home row mods** via ZMK’s `&mt` (mod-tap) behavior: the home row still types letters when tapped, but acts as modifiers when held.
 
 ### Layer 0 — Default (QWERTY)
-
-```
- ┌─────┬─────┬─────┬─────┬─────┐               ┌─────┬─────┬─────┬─────┬─────┐
- │  Q  │  W  │  E  │  R  │  T  │               │  Y  │  U  │  I  │  O  │  P  │
- ├─────┼─────┼─────┼─────┼─────┤               ├─────┼─────┼─────┼─────┼─────┤
- │SH/A │CT/S │AL/D │GU/F │  G  │               │  H  │GU/J │AL/K │CT/L │SH/; │
- ├─────┼─────┼─────┼─────┼─────┤               ├─────┼─────┼─────┼─────┼─────┤
- │  Z  │  X  │  C  │  V  │  B  │               │  N  │  M  │  ,  │  .  │  /  │
- └─────┴─────┼─────┼─────┼─────┘               └─────┼─────┼─────┼─────┴─────┘
-             │  [  │  ]  │                             │  -  │  =  │
-             └─────┴─────┘                             └─────┴─────┘
-                   ┌─────┬─────┐           ┌─────┬─────┐
-                   │SPACE│ TAB │           │BSPC │SPACE│
-                   ├─────┼─────┤           ├─────┼─────┤
-                   │RAISE│LOWER│           │LOWER│RAISE│
-                   ├─────┼─────┤           ├─────┼─────┤
-                   │ADJST│ ESC │           │ENTER│ADJST│
-                   └─────┴─────┘           └─────┴─────┘
-```
 
 Home-row mods use balanced flavor (280ms tapping term, 75ms quick-tap).
 
@@ -106,9 +73,3 @@ Push to the `main` branch (or open a PR) and GitHub Actions will produce a `firm
 ├── build.yaml                      # Build matrix
 └── images/                         # Build photos
 ```
-
-## Credits
-
-- Case design based on the [Dactyl Manuform](https://github.com/abstracthat/dactyl-manuform)
-- Firmware powered by [ZMK](https://zmk.dev/)
-- Controller: [nice!nano](https://nicekeyboards.com/nice-nano/)
