@@ -14,7 +14,7 @@ A hand-wired, split ergonomic keyboard built on the Dactyl Manuform 4x6 layout, 
 | **Firmware**        | ZMK                                                 |
 | **Connectivity**    | Bluetooth (split halves communicate over BLE) + USB |
 | **Diode direction** | col2row                                             |
-| **Case**            | 3D-printed, hand-painted                            |
+| **Case**            | 3D-printed                                          |
 
 ## Keymap
 
