@@ -17,9 +17,9 @@
 #     artifact-name: corne_left_with_logging
 #
 include:
-  - board: nice_nano_v2
+  - board: nrfmicro
     shield: dactyl_manuform_left
-  - board: nice_nano_v2
+  - board: nrfmicro
     shield: dactyl_manuform_right
-  - board: nice_nano_v2
+  - board: nrfmicro
     shield: settings_reset
